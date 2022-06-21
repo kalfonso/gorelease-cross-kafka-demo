@@ -7,7 +7,7 @@ GOARCH ?= $(shell ./bin/go version | awk '{print $$NF}' | cut -d/ -f2)
 BIN = $(BUILD_DIR)/gckd-$(GOOS)-$(GOARCH)
 
 PACKAGE_NAME          := github.com/kalfonso/goreleaser-cross-kafka-demo
-GOLANG_CROSS_VERSION  ?= v1.17.6
+GOLANG_CROSS_VERSION  ?= v1.18.3
 
 .PHONY: build release
 
