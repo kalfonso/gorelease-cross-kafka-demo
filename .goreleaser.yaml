@@ -1,7 +1,7 @@
 builds:
   - id: darwin-amd64
     main: ./
-    binary: golang-cross
+    binary: gckd-darwin-amd64
     goos:
       - darwin
     goarch:
@@ -17,7 +17,7 @@ builds:
       - -s -w -X main.version={{.Version}}
   - id: linux-amd64
     main: ./
-    binary: golang-cross
+    binary: gckd-linux-amd64
     goos:
       - linux
     goarch:

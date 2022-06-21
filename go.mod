@@ -1,4 +1,4 @@
-module laresistance.com/gorelease-kafka-demo
+module github.com/kalfonso/goreleaser-cross-kafka-demo
 
 go 1.18
 

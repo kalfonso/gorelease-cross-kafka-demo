@@ -17,10 +17,6 @@ jobs:
         with:
           go-version: 1.16
       - run: ./bin/hermit env --raw >> $GITHUB_ENV
-      - name: Build Demo
-        run: |
-          make GOOS=linux GOARCH=amd64 CHANNEL=stable build
-          make GOOS=darwin GOARCH=amd64 CHANNEL=stable build
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
         with:
